@@ -1,4 +1,4 @@
-![InfSumPy Logo](https://github.com/wellington36/InfSumPy/blob/main/man/figures/logo_README.png)
+![InfSumPy Logo](https://github.com/wellington36/InfSumPy/raw/main/man/figures/logo_README.png)
 
 --------------------------------------------------------------------------------
 
