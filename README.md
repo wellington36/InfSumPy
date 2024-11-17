@@ -1,12 +1,25 @@
-# InfSumPy <img src="man/figures/logo.png" align="right" height="260"/>
+![InfSumPy Logo](https://github.com/wellington36/InfSumPy/blob/main/man/figures/logo.png)
+
+--------------------------------------------------------------------------------
 
 Approximate infinite sums with a guaranteed error.
+Using ratio and integral tests we evaluate series that pass these tests with controlled error.
 
-# Instalation
+## Instalation
 
-[[Bla bla bla]]
+Make sure you have the mpmath library installed:
 
-# Short example
+```bash
+pip install mpmath
+```
+
+To install the package, run the following command:
+
+```bash
+pip install infsumpy
+```
+
+# Usage
 
 [[Bla bla bla]]
 
