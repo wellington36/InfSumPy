@@ -2,7 +2,7 @@
 
 --------------------------------------------------------------------------------
 
-PyTorch is a Python package that evaluates infinite sums with a guaranteed error.
+InfSumPy is a Python package that evaluates infinite sums with a guaranteed error.
 Using ratio and integral tests we evaluate series that pass these tests with controlled error.
 
 ## Instalation
