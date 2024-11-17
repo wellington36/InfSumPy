@@ -25,7 +25,9 @@ def RatioTestSum(f, M, L, eps, initial_k):
         return log(mpf(f(k)))
 
     # Check the monotonicity of the ratio
-    if L == 0:
+    if L == 1:
+        raise ValueError("Pass a L to the ratio in the interval [0, 1].")
+    elif L == 0:
         is_decreasing = True
     else:
         is_decreasing = term(M) - term(M-1) > log(L)
