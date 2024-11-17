@@ -32,6 +32,8 @@ Which receives from input:
 - _Integral of series_ (optional): The function of g(n) = ∫_n^∞ f(x) dx for the inetegral test (if method is `integral`).
 - _Precision_ (optional): The precision for the `mpmath` library (default value if 53).
 
+The function return the number of terms used in the sum and the approximation.
+
 ### Ratio test
 ```py
 from infsumpy import infsum
