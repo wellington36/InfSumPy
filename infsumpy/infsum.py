@@ -5,17 +5,17 @@ from .methods.integral_test_method import IntegralTestSum
 
 from mpmath import mp, exp, mpf
 
-def infsum(f, method: str, M: int, initial: int, eps=mpf(2)**mpf(-52), L=mpf(1), g=None, precision = 53):
+def infsum(f, method: str, max_terms: int, initial: int, eps=mpf(2)**mpf(-52), L=mpf(1), g=None, precision = 53):
     mp.prec = precision
 
     if method == 'fixed':
-        r = FixedSum(f, M, initial)
+        r = FixedSum(f, max_terms, initial)
     elif method == 'threshold':
-        r = ThresholdSum(f, M, eps, initial)
+        r = ThresholdSum(f, max_terms, eps, initial)
     elif method == 'ratio':
-        r = RatioTestSum(f, M, L, eps, initial)
+        r = RatioTestSum(f, max_terms, L, eps, initial)
     elif method == 'integral':
-        r = IntegralTestSum(f, g, M, eps, initial)
+        r = IntegralTestSum(f, g, max_terms, eps, initial)
     else:
         raise ValueError(f"Method {method} not supported, try 'ratio', 'integral', 'threshold' or 'fixed'")
     
