@@ -20,6 +20,18 @@ pip install infsumpy
 ```
 
 # Usage
+We have the transformations implemented above, and for use have the `infsum` function.
+Which receives from input:
+
+- _A series_: In the form of a function f: $\mathbb{N} \to \mathbb{R}$.
+- _Method_: Can be `ratio`, `integral`, `threshold` or `fixed`.
+- _Max terms_: The maximum number of terms.
+- _Start terms_: The index of the first term of the series.
+- _Epsilon_ (optional): The espected error tolerance (if method is `ratio`, `integral` or `threshold`).
+- _L_ (optional): Limit of the ratio of terms (if method is `ratio`).
+- _Integral of series_ (optional): The function of g(n) = ∫_n^∞ f(x) dx for the inetegral test (if method is `integral`).
+- _Precision_ (optional): The precision for the `mpmath` library (default value if 53).
+
 ### Ratio test
 ```py
 from infsumpy import infsum
@@ -38,7 +50,7 @@ print(infsum(lambda n: n/(2**n), 'ratio', max_terms=10**4, initial=1, eps=2**(-5
 from infsumpy import infsum
 
 # the infinity sum of 1/n**2 pass in the integral test with integral
-# g(n) = ∫_n^∞ 1/n**2 = 1/n, then we can evaluate with controled error
+# g(n) = ∫_n^∞ 1/x**2 dx = 1/n, then we can evaluate with controled error
 print(infsum(lambda n: 1/(n**2), 'integral', max_terms=10**4, initial=1, eps=10**(-3), g=lambda n: 1/n))
 ```
 
