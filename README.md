@@ -1,4 +1,4 @@
-# InfSumPy <img src="man/figures/logo.png" align="right" height="139"/>
+# InfSumPy <img src="man/figures/logo.png" align="right" height="260"/>
 
 Approximate infinite sums with a guaranteed error.
 
