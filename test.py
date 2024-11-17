@@ -5,3 +5,4 @@ def f(n):
 
 print(infsum(f, 'fixed', 10**4, 1))
 print(infsum(f, 'threshold', 10**4, 1))
+print(infsum(f, 'ratio', 10**4, 1, L=1/2))
