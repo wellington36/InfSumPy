@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.0.2'
-DESCRIPTION = 'Approximate infinite sums with a guaranteed error.'
+VERSION = '1.0.3'
+DESCRIPTION = 'Approximate infinite sums with guaranteed error.'
 
 # Setting up
 setup(
