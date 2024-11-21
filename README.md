@@ -21,19 +21,19 @@ pip install infsumpy
 ```
 
 # Usage
-We have the transformations implemented above, and for use have the `infsum` function.
+We have the transformations implemented above, and for use, we have the `infsum` function.
 Which receives from input:
 
 - _A series_: In the form of a function f: $\mathbb{N} \to \mathbb{R}$.
 - _Method_: Can be `ratio`, `integral`, `threshold` or `fixed`.
 - _Max terms_: The maximum number of terms.
 - _Start terms_: The index of the first term of the series.
-- _Epsilon_ (optional): The espected error tolerance (if method is `ratio`, `integral` or `threshold`).
-- _L_ (optional): Limit of the ratio of terms (if method is `ratio`).
-- _Integral of series_ (optional): The function of g(n) = ∫_n^∞ f(x) dx for the inetegral test (if method is `integral`).
+- _Epsilon_ (optional): The expected error tolerance (if the method is `ratio`, `integral` or `threshold`).
+- _L_ (optional): Limit of the ratio of terms (if the method is `ratio`).
+- _Integral of series_ (optional): The function of g(n) = ∫_n^∞ f(x) dx for the integral test (if the method is `integral`).
 - _Precision_ (optional): The precision for the `mpmath` library (default value is 53).
 
-The function return the number of terms used in the sum and the approximation.
+The function returns the number of terms used in the sum and the approximation.
 
 ### Ratio test
 ```py
