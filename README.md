@@ -2,6 +2,8 @@
 
 --------------------------------------------------------------------------------
 ![PyPI](https://img.shields.io/pypi/v/InfSumPy?label=pypi%20package)
+![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
+![example workflow](https://github.com/wellington36/InfSumPy/actions/workflows/test_infsum.yml/badge.svg)
 
 InfSumPy is a Python package that evaluates infinite positive sums with guaranteed error.
 Using ratio and integral tests we evaluate series that pass these tests with controlled error.
