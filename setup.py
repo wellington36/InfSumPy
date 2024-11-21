@@ -13,7 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=open('README.md').read(),
     url="https://github.com/wellington36/InfSumPy",
-    license='MIT',
+    license='GPL-3.0',
     packages=find_packages(),
     install_requires=['mpmath'],
     keywords=['python', 'sum', 'series', 'infinite-series', 'approximation', 'guaranted-sum']
