@@ -7,6 +7,8 @@ from infsumpy.infsum import infsum
 
 from mpmath import exp, log, mp, pi
 
+#################### Test Import ##########################
+import infsumpy
 
 #################### Auxiliar function ####################
 def f(n):
@@ -25,7 +27,6 @@ def equivalence(a, b, epsilon=0.0001):
         return abs(a - b) < epsilon
     
 #################### TESTS ##########################
-
 def test_methods():
     eps = 10**(-3)
 
