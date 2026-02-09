@@ -10,12 +10,6 @@ Using ratio and integral tests we evaluate series that pass these tests with con
 
 ## Instalation
 
-Make sure you have the mpmath library installed:
-
-```bash
-pip install mpmath
-```
-
 To install the package, run the following command:
 
 ```bash
