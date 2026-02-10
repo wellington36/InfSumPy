@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.0.5'
+VERSION = '1.1.0'
 DESCRIPTION = 'Approximate infinite sums with guaranteed error.'
 
 # Setting up
