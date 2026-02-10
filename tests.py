@@ -6,6 +6,7 @@ from infsumpy.methods.integral_test_method import IntegralTestSum
 from infsumpy.infsum import infsum
 
 from mpmath import exp, log, mp, pi
+import pytest
 
 #################### Test Import ##########################
 import infsumpy
@@ -40,6 +41,12 @@ def test_methods():
     assert equivalence(ratio_test[1], 2, epsilon=eps)
     assert equivalence(integral_test[1], pi**2/6, epsilon=eps)
 
+def test_invalid_method_raises_error():
+    with pytest.raises(ValueError, match="not supported"):
+        infsum(f, 'unsupported_method', 10**4, 1)
+
+
 
 if __name__ == '__main__':
     test_methods()
+    test_invalid_method_raises_error()
