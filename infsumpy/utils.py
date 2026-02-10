@@ -5,10 +5,6 @@ def logsumexp(a: list):
 
     return a_max + log(fsum([exp(ai - a_max) for ai in a]))
 
-def fma(a, b, c):
-    with mp.extradps(100):  # Extra precision for more accurate result
-        return fmul(a, b) + c
-
 def logdiffexp(a, b):
     if b > a:
         a, b = b, a

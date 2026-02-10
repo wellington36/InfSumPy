@@ -3,7 +3,9 @@ from infsumpy.methods.threshold_method import ThresholdSum
 from infsumpy.methods.ratio_test_method import RatioTestSum
 from infsumpy.methods.integral_test_method import IntegralTestSum
 
-from infsumpy.infsum import infsum, logsumexp, logdiffexp
+from infsumpy.infsum import infsum
+from infsumpy.utils import logsumexp, logdiffexp
+
 
 from mpmath import exp, log, mp, pi
 import pytest
