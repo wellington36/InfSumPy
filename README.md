@@ -2,6 +2,7 @@
 
 --------------------------------------------------------------------------------
 ![PyPI](https://img.shields.io/pypi/v/InfSumPy?label=pypi%20package)
+[![codecov](https://codecov.io/github/wellington36/InfSumPy/graph/badge.svg?token=DHUQAFHCDL)](https://codecov.io/github/wellington36/InfSumPy)
 ![example workflow](https://github.com/wellington36/InfSumPy/actions/workflows/test_infsum.yml/badge.svg)
 
 InfSumPy is a Python package that evaluates infinite positive sums with guaranteed error.
