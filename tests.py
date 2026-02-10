@@ -3,7 +3,7 @@ from infsumpy.methods.threshold_method import ThresholdSum
 from infsumpy.methods.ratio_test_method import RatioTestSum
 from infsumpy.methods.integral_test_method import IntegralTestSum
 
-from infsumpy.infsum import infsum
+from infsumpy.infsum import infsum, logsumexp, logdiffexp
 
 from mpmath import exp, log, mp, pi
 import pytest
@@ -44,6 +44,25 @@ def test_methods():
 def test_invalid_method_raises_error():
     with pytest.raises(ValueError, match="not supported"):
         infsum(f, 'unsupported_method', 10**4, 1)
+
+def test_logsumexp_and_logdiffexp():
+    from mpmath import mp, log, exp, inf
+
+    # logsumexp checks
+    a = [log(1), log(2), log(3)]
+    assert mp.almosteq(logsumexp(a), log(6), rel_eps=1e-12)
+
+    b = [mp.mpf(1000), mp.mpf(1)]
+    assert mp.almosteq(logsumexp(b), mp.mpf(1000), rel_eps=1e-12)
+
+    # logdiffexp checks
+    x, y = log(10), log(3)
+    assert mp.almosteq(logdiffexp(x, y), log(7), rel_eps=1e-12)
+    assert mp.almosteq(logdiffexp(y, x), log(7), rel_eps=1e-12)
+
+    # nearly equal → -inf
+    z = mp.mpf(100)
+    assert logdiffexp(z, z - mp.mpf("1e-50")) == -inf
 
 
 
