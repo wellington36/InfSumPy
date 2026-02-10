@@ -1,0 +1,42 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.2, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/wellington/Documents/InfSumPy
+plugins: cov-7.0.0, anyio-4.12.1
+collected 0 items
+
+============================ no tests ran in 0.01s =============================
+self._collectors:
+  <Collector at 0x7fb50d64fa10: SysMonitor>
+                      <module> : /home/wellington/.local/bin/coverage:7
+                          main : /home/wellington/.local/lib/python3.14/site-packages/coverage/cmdline.py:1163
+                  command_line : /home/wellington/.local/lib/python3.14/site-packages/coverage/cmdline.py:853
+                        do_run : /home/wellington/.local/lib/python3.14/site-packages/coverage/cmdline.py:1039
+                         start : /home/wellington/.local/lib/python3.14/site-packages/coverage/control.py:702
+               _init_for_start : /home/wellington/.local/lib/python3.14/site-packages/coverage/control.py:601
+                      __init__ : /home/wellington/.local/lib/python3.14/site-packages/coverage/collector.py:119
+  <Collector at 0x7fb50c130a50: SysMonitor>
+                      <module> : /home/wellington/.local/bin/coverage:7
+                          main : /home/wellington/.local/lib/python3.14/site-packages/coverage/cmdline.py:1163
+                  command_line : /home/wellington/.local/lib/python3.14/site-packages/coverage/cmdline.py:853
+                        do_run : /home/wellington/.local/lib/python3.14/site-packages/coverage/cmdline.py:1042
+                           run : /home/wellington/.local/lib/python3.14/site-packages/coverage/execfile.py:213
+                      <module> : /home/wellington/.local/lib/python3.14/site-packages/pytest/__main__.py:9
+                  console_main : /home/wellington/.local/lib/python3.14/site-packages/_pytest/config/__init__.py:223
+                          main : /home/wellington/.local/lib/python3.14/site-packages/_pytest/config/__init__.py:193
+                _prepareconfig : /home/wellington/.local/lib/python3.14/site-packages/_pytest/config/__init__.py:361
+                      __call__ : /home/wellington/.local/lib/python3.14/site-packages/pluggy/_hooks.py:512
+                     _hookexec : /home/wellington/.local/lib/python3.14/site-packages/pluggy/_manager.py:120
+                    _multicall : /home/wellington/.local/lib/python3.14/site-packages/pluggy/_callers.py:121
+          pytest_cmdline_parse : /home/wellington/.local/lib/python3.14/site-packages/_pytest/config/__init__.py:1186
+                         parse : /home/wellington/.local/lib/python3.14/site-packages/_pytest/config/__init__.py:1556
+                      __call__ : /home/wellington/.local/lib/python3.14/site-packages/pluggy/_hooks.py:512
+                     _hookexec : /home/wellington/.local/lib/python3.14/site-packages/pluggy/_manager.py:120
+                    _multicall : /home/wellington/.local/lib/python3.14/site-packages/pluggy/_callers.py:121
+ pytest_load_initial_conftests : /home/wellington/.local/lib/python3.14/site-packages/pytest_cov/plugin.py:200
+                      __init__ : /home/wellington/.local/lib/python3.14/site-packages/pytest_cov/plugin.py:250
+                         start : /home/wellington/.local/lib/python3.14/site-packages/pytest_cov/plugin.py:263
+         ensure_topdir_wrapper : /home/wellington/.local/lib/python3.14/site-packages/pytest_cov/engine.py:55
+                         start : /home/wellington/.local/lib/python3.14/site-packages/pytest_cov/engine.py:284
+                         start : /home/wellington/.local/lib/python3.14/site-packages/coverage/control.py:702
+               _init_for_start : /home/wellington/.local/lib/python3.14/site-packages/coverage/control.py:601
+                      __init__ : /home/wellington/.local/lib/python3.14/site-packages/coverage/collector.py:119
