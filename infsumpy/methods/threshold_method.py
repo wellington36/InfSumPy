@@ -33,7 +33,3 @@ def ThresholdSum(f, M, eps, initial_k):
     log_sum = logsumexp(log_terms[initial_k:(k+1)])
 
     return (k-initial_k, log_sum)
-
-if __name__ == '__main__':
-    print("This is a module. Do not run it directly.")
-    exit(1)

@@ -20,7 +20,3 @@ def infsum(f, method: str, max_terms: int, initial: int, eps=mpf(2)**mpf(-52), L
         raise ValueError(f"Method {method} not supported, try 'ratio', 'integral', 'threshold' or 'fixed'")
     
     return (r[0], float(exp(r[1])))
-
-if __name__ == '__main__':
-    print("This is a module. Do not run it directly.")
-    exit(1)
